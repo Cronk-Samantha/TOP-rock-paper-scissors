@@ -8,3 +8,12 @@ function getComputerChoice() {
         return "scissors";
     }
 }
+
+let getHumanChoice = () => {
+    let humanChoice = prompt("rock, paper, or scissors?: ").toLowerCase();
+    if(humanChoice != "rock" || humanChoice != "paper" || humanChoice != "scissors") {
+        humanChoice = prompt("Not a valid choice, please enter again: ").toLowerCase;
+    } else {
+        return humanChoice;
+    }
+}
