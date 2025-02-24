@@ -39,7 +39,21 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+function playGame() {
+    humanScore = 0;
+    computerScore = 0;
+    for(let i = 0; i < 5; i++) {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
+    }
+    if(humanScore > computerScore) {
+        console.log(`You won ${humanScore} out of 5 games, congrats!!`);
+    } else if(humanScore < computerScore) {
+        console.log(`You only won ${humanScore} out of 5 games, you lose....`);
+    } else if(humanScore === computerScore) {
+        console.log("You tied!! Play again to see who is really the better player...");
+    }
+}
 
-playRound(humanSelection, computerSelection);
+playGame();
