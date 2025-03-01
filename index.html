@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lets Play: Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-    <h1>Rock, Paper, Scissors  - Let's Play!!</h1>
-
-    <h4>Select your choice below, good luck!</h4>
-    
-    <button id="rockbtn">Rock</button>
-    <button id="paperbtn">Paper</button>
-    <button id="scissorsbtn">Scissors</button>
-
-    <div id="scoreboard"></div>
-
+    <h1>Rock-Paper-Scissors</h1>
+    <p>The game: rock, paper, scissors. For each round, the computer will generate
+        a random option and you will click on your choice below. Once you make your choice 
+        a point will be added to the winner automatically. In the event of a tie, no one 
+        gets a point. The game consists of 5 rounds and the final winner will be 
+        displayed. Good Luck!  
+    </p>
+    <section class="game">
+        <h4>Select your choice below, good luck!</h4>
+        <div class="choices">
+            <button id="rockbtn">Rock</button>
+            <button id="paperbtn">Paper</button>
+            <button id="scissorsbtn">Scissors</button>
+        </div>
+        <div id="scoreboard"></div>
+    </section>
     <script src="./java.js"></script>
 </body>
 </html>
